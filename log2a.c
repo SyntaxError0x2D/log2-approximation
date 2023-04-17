@@ -17,8 +17,7 @@ float log2a( int n ) {
     if (n == 0) {return(0.0F);}
     
     int l = binLeng(n);
-    float r;
-    r = (n & ( 1 << ( l - 1 ) ) - 1 );
+    float r = (n & ( 1 << ( l - 1 ) ) - 1 );
     int tmp = (( (* (int *) &r) & expmnt) -((l-1)  << 23))  | (( (* (int *) &r) & mask));
    
 
