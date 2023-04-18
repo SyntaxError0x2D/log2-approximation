@@ -21,5 +21,5 @@ float log2a( int n ) {
     int tmp = (( (* (int *) &r) & expnt) -( l  << 23))  | (( (* (int *) &r) & mask));
    
 
-    return( ((float) l - 1) + * (float *) &tmp );
+    return( ((float) l ) + * (float *) &tmp );
 }
